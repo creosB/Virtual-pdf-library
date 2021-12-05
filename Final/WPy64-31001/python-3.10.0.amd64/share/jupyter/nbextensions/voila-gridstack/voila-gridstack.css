@@ -1,0 +1,95 @@
+
+.grid-stack-item-content {
+    background: var(--jp-layout-color0);
+    color: var(--jp-ui-font-color1);
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-stack-item {
+    position: static;
+}
+
+.grid-stack-item-hidden {
+    display: none;
+}
+
+.gridhandle {
+    position: relative;
+    background: var(--jp-layout-color2);
+    z-index: 1;
+    height: 5px;
+    cursor: move;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.grid-stack {
+    background-color: var(--jp-layout-color2);
+}
+
+#notebook-container {
+    background-color: var(--jp-layout-color2);
+    padding: 0;
+}
+
+.ui-resizable-se {
+    background-image: none !important;
+    transform: rotate(0deg) !important;
+    -o-transform: rotate(0deg) !important;
+    -ms-transform: rotate(0deg) !important;
+    -moz-transform: rotate(0deg) !important;
+    -webkit-transform: rotate(0deg) !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-bottom: 10px solid var(--jp-layout-color3);
+    border-left: 10px solid transparent;
+}
+
+.ui-resizable-sw {
+    background-image: none !important;
+    transform: rotate(0deg) !important;
+    -o-transform: rotate(0deg) !important;
+    -ms-transform: rotate(0deg) !important;
+    -moz-transform: rotate(0deg) !important;
+    -webkit-transform: rotate(0deg) !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-bottom: 10px solid var(--jp-layout-color3);
+    border-right: 10px solid transparent;
+}
+
+/* SPINNER */
+
+#loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    color: var(--jp-content-font-color1);
+    font-family: sans-serif;
+}
+
+.spinner {
+    animation: rotation 2s infinite linear;
+    transform-origin: 50% 50%;
+}
+
+.spinner-container {
+    width: 10%;
+}
+
+@keyframes rotation {
+      from {transform: rotate(0deg);}
+      to   {transform: rotate(359deg);}
+}
+
+.voila-spinner-color1{
+    fill:#268380;
+}
+
+.voila-spinner-color2{
+    fill:#f8e14b;
+}

@@ -1,1 +1,0 @@
-(self.webpackChunkipycanvas=self.webpackChunkipycanvas||[]).push([[568],{568:(e,a,n)=>{"use strict";function s(e){for(var n in e)a.hasOwnProperty(n)||(a[n]=e[n])}Object.defineProperty(a,"__esModule",{value:!0}),s(n(657)),s(n(367))}}]);
