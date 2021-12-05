@@ -1,0 +1,84 @@
+{%- extends 'lab/index.html.j2' -%}
+
+{% block html_head_css %}
+<link href="https://cdn.jsdelivr.net/npm/gridstack@4/dist/gridstack.min.css" rel="stylesheet" />
+{{ super() }}
+
+<style>
+.grid-stack-item-content {
+    background: var(--jp-layout-color0);
+    color: var(--jp-ui-font-color1);
+    display: flex;
+    flex-direction: column;
+}
+
+.gridhandle {
+    position: relative;
+    background: var(--jp-layout-color2);
+    z-index: 1;
+    height: 5px;
+    cursor: move;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.voila-gridstack {
+{% if resources.gridstack.show_handles  %}
+    background: var(--jp-layout-color2);
+{% else %}
+    background: var(--jp-layout-color0);
+{% endif %}
+    color: var(--jp-ui-font-color0);
+}
+
+.jp-Notebook {
+{% if resources.gridstack.show_handles  %}
+    background: var(--jp-layout-color2);
+{% else %}
+    background: var(--jp-layout-color0);
+{% endif %}
+    color: var(--jp-ui-font-color0);
+}
+
+.ui-resizable-se {
+    background-image: none !important;
+    transform: rotate(0deg) !important;
+    -o-transform: rotate(0deg) !important;
+    -ms-transform: rotate(0deg) !important;
+    -moz-transform: rotate(0deg) !important;
+    -webkit-transform: rotate(0deg) !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-bottom: 10px solid var(--jp-layout-color3);
+    border-left: 10px solid transparent;
+}
+
+.ui-resizable-sw {
+    background-image: none !important;
+    transform: rotate(0deg) !important;
+    -o-transform: rotate(0deg) !important;
+    -ms-transform: rotate(0deg) !important;
+    -moz-transform: rotate(0deg) !important;
+    -webkit-transform: rotate(0deg) !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-bottom: 10px solid var(--jp-layout-color3);
+    border-right: 10px solid transparent;
+}
+
+</style>
+
+<style>
+a.anchor-link {
+  display: none;
+}
+.highlight  {
+  margin: 0.4em;
+}
+body {
+  overflow: scroll;
+}
+</style>
+
+{% endblock html_head_css %}

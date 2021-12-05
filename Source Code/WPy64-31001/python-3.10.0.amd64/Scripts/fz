@@ -1,0 +1,7 @@
+#!C:\WinP\bd310\bu\WPy64-31001\python-3.10.0.amd64\python.exe
+import sys
+
+from flaskerize.parser import Flaskerize
+
+print("Flaskerizing...")
+Flaskerize(sys.argv)
