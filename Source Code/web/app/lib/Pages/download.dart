@@ -17,6 +17,29 @@ class _DownloadState extends State<Download> {
       children: <Widget>[
         Theme(
           data: ThemeData(
+            inputDecorationTheme: InputDecorationTheme(
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+                borderSide: const BorderSide(
+                  color: Colors.white,
+                ),
+              ),
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+                borderSide: const BorderSide(
+                  color: Colors.white,
+                ),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+                borderSide: const BorderSide(
+                  color: Colors.white,
+                ),
+              ),
+              labelStyle: const TextStyle(
+                color: Colors.white,
+              ),
+            ),
             primaryColor: Colors.white,
             hintColor: Colors.white,
             primaryColorDark: Colors.white,
@@ -43,14 +66,17 @@ class _DownloadState extends State<Download> {
                     SizedBox(width: 10),
                     Icon(
                       SimpleIcons.microsoftonedrive,
+                      color: Colors.white,
                     ),
                     SizedBox(width: 10),
                     Icon(
                       SimpleIcons.googledrive,
+                      color: Colors.white,
                     ),
                     SizedBox(width: 10),
                     Icon(
                       SimpleIcons.dropbox,
+                      color: Colors.white,
                     ),
                   ],
                 ),
@@ -59,6 +85,7 @@ class _DownloadState extends State<Download> {
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'File Link',
+                    hintText: 'type here...',
                   ),
                   onChanged: (value) {
                     // do something with the user name

@@ -2,6 +2,7 @@ import 'package:dotted_border/dotted_border.dart'; // customize border library
 import 'package:flutter/material.dart'; // basic library
 import 'package:flutter_dropzone/flutter_dropzone.dart'; // area decoration
 import 'package:virtuallibrary/Data/dragged_file_data.dart'; // drag and drop library
+import 'package:virtuallibrary/Pages/download.dart';
 import 'package:virtuallibrary/api/fileapi.dart';
 import 'package:virtuallibrary/Data/filedata.dart';
 import 'package:provider/provider.dart';
@@ -22,25 +23,26 @@ class _DragandDropWidgetState extends State<DragandDropWidget> {
   late DropzoneViewController _controller; // drag and drop library _controller
   bool isColorChanged = false; // check highlighter color
 
-  void onAdd(String name, String size, String data) {
+  Future<void> onAdd(String name, String size, String data) async {
     final String names = name;
     final String sizes = size;
     final String datas = data;
 
     if (names.isNotEmpty && sizes.isNotEmpty && datas.isNotEmpty) {
       final FileData file = FileData(name: names, size: sizes, data: datas);
-      Provider.of<FileProvider>(context, listen: false).addFiles(file);
+      await Provider.of<FileProvider>(context, listen: false).addFiles(file);
     }
   }
 
   @override
   Widget build(BuildContext context) {
     // Set All Area Color
-    final browseColor =
-        isColorChanged ? Colors.black : const Color.fromRGBO(231, 231, 231, 1);
+    final browseColor = isColorChanged
+        ? const Color.fromRGBO(231, 231, 231, 1)
+        : const Color.fromRGBO(231, 231, 231, 0.7);
     final dragAreaColor = isColorChanged
-        ? const Color.fromRGBO(61, 96, 152, 1)
-        : const Color.fromRGBO(33, 49, 89, 1);
+        ? const Color.fromRGBO(108, 61, 195, 0.7)
+        : const Color.fromRGBO(108, 61, 195, 1);
 
     return areaDecoration(
       child: Stack(
@@ -54,47 +56,101 @@ class _DragandDropWidgetState extends State<DragandDropWidget> {
               onLeave: () => setState(() => isColorChanged = false),
               onDrop: uploadedFile), // call file has been uploaded function
           // Drag and drop text area
-          Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                // drag and drop icon
-                Icon(
-                  Icons.cloud_upload_sharp,
-                  size: 80,
-                  color: browseColor,
-                ),
-                Text(
-                  "Drag and Drop Here\nOr",
-                  style: TextStyle(color: browseColor, fontSize: 24),
-                ),
-                const SizedBox(height: 30),
-                // Browse and upload button
-                ElevatedButton.icon(
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 36, vertical: 36),
-                    primary: dragAreaColor,
-                    shape: const RoundedRectangleBorder(),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // drag and drop icon
+              Stack(
+                alignment: Alignment.center,
+                children: <Widget>[
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Drag and Drop Here\nOr",
+                        style: TextStyle(color: browseColor, fontSize: 24),
+                      ),
+                      Opacity(
+                        opacity: 0.7,
+                        child: Image.asset(
+                          'assets/images/pdf.png',
+                          width: 150,
+                          height: 110,
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+              const SizedBox(height: 10),
+              // Browse and upload button
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  RawMaterialButton(
+                    hoverColor: const Color.fromRGBO(61, 96, 152, 0.3),
+                    splashColor: Colors.black,
+                    highlightColor: Colors.black,
+                    onPressed: () async {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          backgroundColor:
+                              const Color.fromRGBO(108, 61, 195, 1),
+                          duration: const Duration(seconds: 20),
+                          content: SizedBox(
+                            height: MediaQuery.of(context).size.height * 0.15,
+                            child: const Download(),
+                          ),
+                          action: SnackBarAction(
+                            textColor: Colors.white,
+                            label: "Cancel",
+                            onPressed: () {
+                              ScaffoldMessenger.of(context)
+                                  .hideCurrentSnackBar();
+                            },
+                          ),
+                        ),
+                      );
+                    },
+                    elevation: 2.0,
+                    fillColor: dragAreaColor,
+                    child: SizedBox(
+                        height: 100,
+                        width: 100,
+                        child: Image.asset("assets/images/driveoption.png")),
+                    padding: const EdgeInsets.all(3.0),
+                    shape: const CircleBorder(),
                   ),
-                  icon: Icon(
-                    Icons.search,
-                    size: 32,
-                    color: browseColor,
+                  const SizedBox(
+                    width: 10,
                   ),
-                  label: Text(
-                    "Browse Files",
-                    style: TextStyle(color: browseColor, fontSize: 16),
+                  ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 36, vertical: 36),
+                      primary: dragAreaColor,
+                      shape: const RoundedRectangleBorder(),
+                    ),
+                    icon: Icon(
+                      Icons.search,
+                      size: 32,
+                      color: browseColor,
+                    ),
+                    label: Text(
+                      "Browse Files",
+                      style: TextStyle(color: browseColor, fontSize: 16),
+                    ),
+                    // call file has been uploaded function
+                    onPressed: () async {
+                      final _actions = await _controller.pickFiles();
+                      if (_actions.isEmpty) return;
+                      uploadedFile(_actions.first);
+                    },
                   ),
-                  // call file has been uploaded function
-                  onPressed: () async {
-                    final _actions = await _controller.pickFiles();
-                    if (_actions.isEmpty) return;
-                    uploadedFile(_actions.first);
-                  },
-                ),
-              ],
-            ),
+                ],
+              ),
+              const SizedBox(height: 10),
+            ],
           ),
         ],
       ),
@@ -103,8 +159,8 @@ class _DragandDropWidgetState extends State<DragandDropWidget> {
 
   Widget areaDecoration({required Widget child}) {
     final backgroundColor = isColorChanged
-        ? const Color.fromRGBO(61, 96, 152, 1)
-        : const Color.fromRGBO(33, 49, 89, 1);
+        ? const Color.fromRGBO(108, 61, 195, 1)
+        : const Color.fromRGBO(108, 61, 195, 0.7);
     return ClipRRect(
       borderRadius: BorderRadius.circular(25),
       child: Container(
@@ -141,6 +197,8 @@ class _DragandDropWidgetState extends State<DragandDropWidget> {
 
     if (mime != "application/pdf") {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        backgroundColor: const Color.fromRGBO(108, 61, 195, 1),
+        elevation: 10,
         content: Row(
           children: const <Widget>[
             Icon(
@@ -150,7 +208,7 @@ class _DragandDropWidgetState extends State<DragandDropWidget> {
             ),
             SizedBox(width: 10),
             Text(
-              "Only PDF file can be uploaded",
+              "Only PDF file can be upload",
               style: TextStyle(color: Colors.red, fontSize: 18),
             ),
           ],
@@ -171,17 +229,19 @@ class _DragandDropWidgetState extends State<DragandDropWidget> {
     onAdd(getFileName, draggedFile.calculateSize, data.toString());
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
+        backgroundColor: const Color.fromRGBO(108, 61, 195, 1),
+        elevation: 10,
         content: Row(
           children: const <Widget>[
             Icon(
               Icons.done_outlined,
               size: 40.0,
-              color: Colors.green,
+              color: Colors.white,
             ),
             SizedBox(width: 10),
             Text(
               "Pdf file successfully uploaded",
-              style: TextStyle(color: Colors.green, fontSize: 18),
+              style: TextStyle(color: Colors.white, fontSize: 18),
             ),
           ],
         ),

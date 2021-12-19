@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:virtuallibrary/Pages/anasayfa.dart';
 import 'package:virtuallibrary/Pages/filelist.dart';
-import 'package:virtuallibrary/Pages/login.dart';
+import 'package:virtuallibrary/Pages/mainpage.dart';
 import 'package:virtuallibrary/api/fileapi.dart';
 
-Future<void> main() async {
+void main() {
   runApp(const MyApp());
 }
 
@@ -20,10 +19,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           initialRoute: "/",
           routes: {
-            '/': (context) => const Anasayfa(),
-            '/login': (BuildContext context) => const LoginScreen(),
-            '/forgotPass': (BuildContext context) =>
-                const ForgotPasswordScreen(),
+            '/': (context) => const Mainpage(),
             '/filelist': (BuildContext context) => const FileList(),
           },
         ));

@@ -16,7 +16,7 @@ class FileProvider with ChangeNotifier {
     return [..._files];
   }
 
-  void addFiles(FileData file) async {
+  Future<void> addFiles(FileData file) async {
     final response =
         await http.post(Uri.parse('http://127.0.0.1:8000/fileapi/v1/'),
             headers: {
@@ -26,7 +26,6 @@ class FileProvider with ChangeNotifier {
     if (response.statusCode == 201) {
       file.id = json.decode(response.body)['id'];
       _files.add(file);
-      notifyListeners();
     }
   }
 

@@ -25,12 +25,6 @@ class _FileListState extends State<FileList> {
     init();
   }
 
-  @override
-  void dispose() {
-    debouncer?.cancel();
-    super.dispose();
-  }
-
   void debounce(
     VoidCallback callback, {
     Duration duration = const Duration(milliseconds: 100),
@@ -57,21 +51,29 @@ class _FileListState extends State<FileList> {
       itemList = fileList.files.toList();
     }
     return Scaffold(
+      backgroundColor: const Color.fromRGBO(78, 65, 191, 1),
       appBar: AppBar(
         centerTitle: true,
+        backgroundColor: const Color.fromRGBO(108, 61, 195, 1),
       ),
       body: (itemList.isNotEmpty)
           ? Column(
               children: <Widget>[
                 buildSearch(),
-                Expanded(
+                Flexible(
                   child: ListView.builder(
                     shrinkWrap: true,
                     itemCount: itemList.length,
                     itemBuilder: (context, index) {
                       final tempList = itemList[index];
 
-                      return buildFile(tempList, fileList);
+                      return Card(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          elevation: 10,
+                          color: const Color.fromRGBO(108, 61, 195, 0.5),
+                          child: buildFile(tempList, fileList));
                     },
                   ),
                 ),
@@ -111,24 +113,27 @@ class _FileListState extends State<FileList> {
         spacing: 12,
         children: <Widget>[
           IconButton(
-              icon: const Icon(Icons.delete, color: Colors.black),
+              hoverColor: const Color.fromRGBO(108, 61, 195, 1),
+              icon: const Icon(Icons.delete, color: Colors.white),
               onPressed: () {
                 deleteFile(file);
 
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     duration: const Duration(seconds: 2),
+                    backgroundColor: const Color.fromRGBO(108, 61, 195, 1),
+                    elevation: 10,
                     content: Row(
                       children: const <Widget>[
                         Icon(
                           Icons.delete_forever_outlined,
                           size: 40.0,
-                          color: Colors.green,
+                          color: Colors.white,
                         ),
                         SizedBox(width: 10),
                         Text(
                           "Pdf file successfully deleted",
-                          style: TextStyle(color: Colors.green, fontSize: 18),
+                          style: TextStyle(color: Colors.white, fontSize: 18),
                         ),
                       ],
                     ),
@@ -136,23 +141,36 @@ class _FileListState extends State<FileList> {
                 );
               }),
           IconButton(
-              icon: const Icon(Icons.download, color: Colors.black),
+              hoverColor: const Color.fromRGBO(108, 61, 195, 1),
+              icon: const Icon(Icons.download, color: Colors.white),
               onPressed: () async {
                 fileList.downloadPdf(file);
               }),
           IconButton(
-              icon: const Icon(Icons.visibility_rounded, color: Colors.black),
+              hoverColor: const Color.fromRGBO(108, 61, 195, 1),
+              icon: const Icon(Icons.visibility_rounded, color: Colors.white),
               onPressed: () async {
                 fileList.openPdf(file);
               })
         ],
       ),
+      leading: Image.asset(
+        'assets/images/encoded.png',
+        width: 70,
+        height: 90,
+        fit: BoxFit.fill,
+      ),
       title: Text(
         file.name,
-        style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        style: const TextStyle(color: Colors.white, fontSize: 18),
       ),
       subtitle: Text(
         file.size,
-        style: const TextStyle(fontSize: 15, color: Colors.black),
+        style: const TextStyle(color: Colors.white, fontSize: 16),
       ));
+  @override
+  void dispose() {
+    debouncer?.cancel();
+    super.dispose();
+  }
 }
