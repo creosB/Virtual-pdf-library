@@ -45,7 +45,7 @@
 (<strong>Virtual-pdf-library/Final/WPy64-31001/</strong> file is set as portable to work even if python is not installed if Django is installed, open command line and <strong>Virtual-pdf-library/Final/backend After coming to the /files_app/</strong> folder, you can start the server by typing <strong>python <a href="http://manage.py">manage.py</a> runserver</strong>.)</li>
 <li class="has-line-data" data-line-start="44" data-line-end="47"><strong>Görseller, tasarımlar ve modellemeler tamamen bana aittir.</strong><br>
 (<strong>Images, designs, and models are entirely my own.</strong>)<br>
-<a href="https://www.artstation.com/artwork/3q9Q4g" target="_blank"><img src="https://www.artstation.com/assets/about/logo/logo-artstation-horizontal-cbbe936e68623842ca878651bfd9ceb3.png" alt="ArtStation" style="height: 300px !important;width: 300px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+<a href="https://www.artstation.com/artwork/3q9Q4g" target="_blank"><img src="https://www.artstation.com/assets/about/logo/logo-artstation-horizontal-cbbe936e68623842ca878651bfd9ceb3.png" alt="ArtStation" style="height: 150px !important;width: 300px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 </ul>
 <hr>
 <h1 class="code-line" data-line-start=49 data-line-end=50 ><a id="License_49"></a>License</h1>
