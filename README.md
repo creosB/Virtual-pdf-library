@@ -13,7 +13,8 @@
 (There are 10 minutes for each program session. After this time, it will turn off automatically.)</li>
 <li class="has-line-data" data-line-start="12" data-line-end="14">Tüm işlemlerin çalışması main.exe’ye bağlanmıştır. Açtıktan sonra herhangi bir işlem gerektirmez ve direkt siteye girerek ulaşabilirsiniz.<br>
 (All processes are dependent on main.exe. After opening, it does not require any action and you can access the site directly.)</li>
-<li class="has-line-data" data-line-start="14" data-line-end="16">main.exe açtıktan sonra localhost:8080 adresinden erişebilirsiniz. / After opening main.exe, you can access it from localhost:8080.</li>  
+<li class="has-line-data" data-line-start="14" data-line-end="16">main.exe açtıktan sonra localhost:8080 adresinden erişebilirsiniz. / After opening main.exe, you can access it from localhost:8080.</li>
+<li class="has-line-data" data-line-start="14" data-line-end="16">Tek exe dosyası ile çalışmasını sağlamak için .vbs ve .bat kullandım. / I used .vbs and .bat to make it work with a single exe file. </li>  
 <li class="has-line-data" data-line-start="16" data-line-end="18">Alt taraftan görsel olarak inceleyebilirsiniz. / You can visually inspect below</li>
 </ul>
 <hr>
