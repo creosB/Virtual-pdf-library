@@ -289,6 +289,16 @@ def RegisterPythonwin(register=True, lib_dir=None):
             "",
             pythonwin_exe,
         ),
+        (
+            "Software\\Classes\\Python.File\\shell\\Edit with Pythonwin",
+            "command",
+            pythonwin_edit_command,
+        ),
+        (
+            "Software\\Classes\\Python.NoConFile\\shell\\Edit with Pythonwin",
+            "command",
+            pythonwin_edit_command,
+        ),
     ]
 
     try:

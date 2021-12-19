@@ -40,6 +40,7 @@ dependencies:
   provider: ^6.0.1
   cupertino_icons: ^1.0.2
   simple_icons: ^6.1.0
+  flutter_svg: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -66,9 +67,18 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/logo.gif
-    - assets/images/background_image.jpg
-    - assets/images/google.png
+    - assets/images/background.png
+    - assets/images/pdfbox.png
+    - assets/images/filelist.png
+    - assets/images/uploaded.gif
+    - assets/images/driveoption.png
+    - assets/images/pdf.png
+    - assets/images/encoded.png
+  fonts:
+     - family: Agrandir
+       fonts:
+        - asset: assets/fonts/AgrandirWideBlackItalic900.ttf
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:
