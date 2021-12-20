@@ -53,6 +53,7 @@
 <hr>
 <h1 class="code-line" data-line-start=49 data-line-end=50 ><a id="Small_Explanation_49"></a>Small Explanation</h1>
 <p class="has-line-data" data-line-start="50" data-line-end="52">When you drag or select the PDF file and upload it, it automatically converts to uint8list and then shows you a notification that it has been uploaded. After completing this process, you can delete the PDF file from the computer because your PDF is now in the database. Apart from these, if you enter the sharing link you received from Google Drive, Dropbox, or OneDrive into the program, it automatically converts it to a downloadable link and starts downloading it. After the download process is finished, you can drag and upload the file.<br>
+
 In the process of showing PDF, I convert the uint8list in the database in the database section and show it to the user without downloading it again. If the user wants to download it, he can download the converted version by pressing the download button.</p>
 <hr>
 <h1 class="code-line" data-line-start=49 data-line-end=50 ><a id="License_49"></a>License</h1>
