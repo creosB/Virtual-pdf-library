@@ -19,7 +19,11 @@
 </ul>
 <hr>
 <h1 class="code-line" data-line-start=18 data-line-end=19 ><a id="Grseller__Pictures_18"></a>Görseller / Pictures</h1>
-<p class="has-line-data" data-line-start="19" data-line-end="25"><a href="https://youtu.be/yXfIPOkvyQQ"><img src="https://raw.githubusercontent.com/creosB/Virtual-pdf-library/main/resim/virtual.png" alt="Watch the video"></a><br>
+    <iframe width="560" height="315"
+src="https://www.youtube.com/watch?v=yXfIPOkvyQQ" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
 <img src="https://github.com/creosB/Virtual-pdf-library/blob/main/resim/virtual.gif" alt="virtualgif" title="Virtual"><br>
 <img src="https://raw.githubusercontent.com/creosB/Virtual-pdf-library/main/resim/resim1.png?token=ADMMRQTLM5AUEFW4UFJQWH3BZDS2U" alt="mainpage" title="Mainpage"><br>
 <img src="https://raw.githubusercontent.com/creosB/Virtual-pdf-library/main/resim/resim2.png?token=ADMMRQUL4EPXF742TFXPNCLBZDTDW" alt="uploadpage" title="Upload Page"><br>
