@@ -52,9 +52,14 @@
 </ul>
 <hr>
 <h1 class="code-line" data-line-start=49 data-line-end=50 ><a id="Small_Explanation_49"></a>Small Explanation</h1>
-<p class="has-line-data" data-line-start="50" data-line-end="52">When you drag or select the PDF file and upload it, it automatically converts to uint8list and then shows you a notification that it has been uploaded. After completing this process, you can delete the PDF file from the computer because your PDF is now in the database. Apart from these, if you enter the sharing link you received from Google Drive, Dropbox, or OneDrive into the program, it automatically converts it to a downloadable link and starts downloading it. After the download process is finished, you can drag and upload the file.<br>
+<p class="has-line-data" data-line-start="50" data-line-end="52">-PDF-
+When you drag or select the PDF file and upload it, it automatically converts to uint8list and then shows you a notification that it has been uploaded. After completing this process, you can delete the PDF file from the computer because your PDF is now in the database. Apart from these, if you enter the sharing link you received from Google Drive, Dropbox, or OneDrive into the program, it automatically converts it to a downloadable link and starts downloading it. After the download process is finished, you can drag and upload the file.<br>
 
-In the process of showing PDF, I convert the uint8list in the database in the database section and show it to the user without downloading it again. If the user wants to download it, he can download the converted version by pressing the download button.</p>
+In the process of showing PDF, I convert the uint8list in the database in the database section and show it to the user without downloading it again. If the user wants to download it, he can download the converted version by pressing the download button.
+
+-EXE / Server-
+I use portable python so that it can work on computers that do not have python, so it helps me to access Django. On the server-side, it only runs by typing "python manage.py runserver" into the console to compile the website and run the API / Database part of Django. After the session time (10 minutes) expires, it closes everything and ends. Normally it will show you the cmd to run these commands. Therefore, you have to trade with your hand or close. With the .bat, .VBS I wrote in this program, can run the portable python + server without any need for them.
+</p>
 <hr>
 <h1 class="code-line" data-line-start=49 data-line-end=50 ><a id="License_49"></a>License</h1>
 <hr>
