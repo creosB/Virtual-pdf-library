@@ -23,11 +23,11 @@ func main() {
 	srv := StartHttpServer(httpServerExitDone)
 
 	log.Printf("main: serving for 600 seconds")
-	// 30 seconds after, it will shutdown the server
+	// 600 seconds after, it will shutdown the server
 	// if you want to change time, just change this line
 	time.Sleep(600 * time.Second)
 
-	// 30 seconds after it will give warning on command line
+	// 600 seconds after it will give warning on command line
 	log.Printf("main: stopping HTTP server")
 
 	// now we can shutdown the server
