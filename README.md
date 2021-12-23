@@ -60,6 +60,13 @@ In the process of showing PDF, I convert the uint8list in the database in the da
 -EXE / Server-
 I use portable python so that it can work on computers that do not have python, so it helps me to access Django. On the server-side, it only runs by typing "python manage.py runserver" into the console to compile the website and run the API / Database part of Django. After the session time (10 minutes) expires, it closes everything and ends. Normally it will show you the cmd to run these commands. Therefore, you have to trade with your hand or close. With the .bat, .VBS I wrote in this program, can run the portable python + server without any need for them.
 
+Packages:
+-django
+-djangorestframework
+-djangeo-cors-headers
+-psycopg2-binary
+-sqlite3
+
 News that inspired me to do this:
 https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z
 </p>
