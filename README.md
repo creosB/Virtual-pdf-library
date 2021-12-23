@@ -65,6 +65,7 @@ Packages:
 -djangorestframework
 -djangeo-cors-headers
 -psycopg2-binary
+-sqlite3
 
 News that inspired me to do this:
 https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z
