@@ -67,6 +67,12 @@ Packages:
 -psycopg2-binary
 -sqlite3
 
+django admin panel information
+username: admin
+email: admin@admin.com
+pw: -izaqUt*lWr3f#FuC4L5
+
+
 News that inspired me to do this:
 https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z
 </p>
