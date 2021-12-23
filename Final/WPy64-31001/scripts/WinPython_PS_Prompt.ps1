@@ -19,7 +19,7 @@ $env:WINPYDIR = $env:WINPYDIRBASE+"\python-3.10.0.amd64"
 $env:PYTHON = "%WINPYDIR%\python.exe"
 
 
-$env:WINPYVER = '3.10.0.1'
+$env:WINPYVER = '3.10.0.1dot'
 $env:HOME = "$env:WINPYDIRBASE\settings"
 
 # rem read https://github.com/winpython/winpython/issues/839
