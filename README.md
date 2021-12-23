@@ -1,7 +1,7 @@
 <h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="Virtual_PDF_Library_0"></a>Virtual PDF Library</h1>
 <p class="has-line-data" data-line-start="1" data-line-end="2"><a href="http://www.artistscompany.tech"><img src="https://raw.githubusercontent.com/creosB/presentation/main/background.png" alt="Artists Company" title="Artists Company"></p>
-<h2 class="code-line" data-line-start=2 data-line-end=3 ><a id="Birok_teknolojiyi_kullanarak_sanal_pdf_ktphanesi_oluturdum_Bunun_sayesinde_istediiniz_gibi_onlineoffline_pdf_dosyalarn_saklayabilir_ve_rahata_ilem_yapabilirsiniz_2"></a>Birçok teknolojiyi kullanarak sanal pdf kütüphanesi oluşturdum. Bunun sayesinde istediğiniz gibi online/offline pdf dosyalarını saklayabilir ve rahatça işlem yapabilirsiniz.</h2>
-<h2 class="code-line" data-line-start=3 data-line-end=4 ><a id="I_created_a_virtual_pdf_library_using_many_technologies_Thanks_to_this_you_can_store_onlineoffline_pdf_files_as_you_wish_and_operate_comfortably_3"></a>I created a virtual pdf library using many technologies. Thanks to this, you can store online/offline pdf files as you wish and operate comfortably.</h2>
+<h2 class="code-line" data-line-start=2 data-line-end=3 ><a id="Birok_teknolojiyi_kullanarak_sanal_pdf_ktphanesi_oluturdum_Bunun_sayesinde_istediiniz_gibi_onlineoffline_pdf_dosyalarn_saklayabilir_ve_rahata_ilem_yapabilirsiniz_2"></a>Birçok teknolojiyi kullanarak sanal pdf kütüphanesi oluşturdum. Bunun sayesinde istediğiniz gibi online/offline pdf dosyalarını saklayabilir ve Google Drive, Dropbox, Onedrive üzerinden dosya alıp rahatça işlem yapabilirsiniz. Tek executable dosya ile erişim sağlanmasından dolayı alanında çok özel bir yere sahip olması ve bunu paylaşma isteğimden dolayı açık kaynak olarak sizlere sunuyorum.</h2>
+<h2 class="code-line" data-line-start=3 data-line-end=4 ><a id="I_created_a_virtual_pdf_library_using_many_technologies_Thanks_to_this_you_can_store_onlineoffline_pdf_files_as_you_wish_and_operate_comfortably_3"></a>I created a virtual pdf library using many technologies. Thanks to this, you can store online/offline pdf files as you wish, and you can receive files from Google Drive, Dropbox, Onedrive and process them comfortably. I present it to you as open-source because it has a very special place in its field due to access with a single executable file and I want to share it.</h2>
 <a href="https://www.buymeacoffee.com/creos" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 <h1 class="code-line" data-line-start=5 data-line-end=6 ><a id="zelikleri__Properties_5"></a>Özelikleri / Properties</h1>
 <ul>
@@ -13,11 +13,14 @@
 (There are 10 minutes for each program session. After this time, it will turn off automatically.)</li>
 <li class="has-line-data" data-line-start="12" data-line-end="14">Tüm işlemlerin çalışması main.exe’ye bağlanmıştır. Açtıktan sonra herhangi bir işlem gerektirmez ve direkt siteye girerek ulaşabilirsiniz.<br>
 (All processes are dependent on main.exe. After opening, it does not require any action and you can access the site directly.)</li>
-<li class="has-line-data" data-line-start="14" data-line-end="16">Alt taraftan görsel olarak inceleyebilirsiniz. / You can visually inspect below</li>
+<li class="has-line-data" data-line-start="14" data-line-end="16">main.exe açtıktan sonra localhost:8080 adresinden erişebilirsiniz. / After opening main.exe, you can access it from localhost:8080.</li>
+<li class="has-line-data" data-line-start="14" data-line-end="16">Tek exe dosyası ile çalışmasını sağlamak için .vbs ve .bat kullandım. / I used .vbs and .bat to make it work with a single exe file. </li>  
+<li class="has-line-data" data-line-start="16" data-line-end="18">Alt taraftan görsel olarak inceleyebilirsiniz. / You can visually inspect below</li>
 </ul>
 <hr>
 <h1 class="code-line" data-line-start=18 data-line-end=19 ><a id="Grseller__Pictures_18"></a>Görseller / Pictures</h1>
-<p class="has-line-data" data-line-start="19" data-line-end="24"><img src="https://raw.githubusercontent.com/creosB/Virtual-pdf-library/main/resim/virtual.png?token=ADMMRQQLODP2ROVKQTEL5N3BZDS3C" alt="showroom" title="Virtual PDF Library"><br>
+<p class="has-line-data" data-line-start="19" data-line-end="25"><a href="https://youtu.be/yXfIPOkvyQQ"><img src="https://raw.githubusercontent.com/creosB/Virtual-pdf-library/main/resim/virtual.png" alt="Virtual"></a><br>
+<img src="https://github.com/creosB/Virtual-pdf-library/blob/main/resim/virtual.gif" alt="virtualgif" title="Virtual"><br>
 <img src="https://raw.githubusercontent.com/creosB/Virtual-pdf-library/main/resim/resim1.png?token=ADMMRQTLM5AUEFW4UFJQWH3BZDS2U" alt="mainpage" title="Mainpage"><br>
 <img src="https://raw.githubusercontent.com/creosB/Virtual-pdf-library/main/resim/resim2.png?token=ADMMRQUL4EPXF742TFXPNCLBZDTDW" alt="uploadpage" title="Upload Page"><br>
 <img src="https://raw.githubusercontent.com/creosB/Virtual-pdf-library/main/resim/resim3.png?token=ADMMRQVKQ65EGL2PHGJLNVDBZDTFI" alt="convert" title="Convert Page"><br>
@@ -47,6 +50,19 @@
 (<strong>Images, designs, and models are entirely my own.</strong>)<br>
 <a href="https://www.artstation.com/artwork/3q9Q4g" target="_blank"><img src="https://www.artstation.com/assets/about/logo/logo-artstation-horizontal-cbbe936e68623842ca878651bfd9ceb3.png" alt="ArtStation" style="height: 130px !important;width: 300px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 </ul>
+<hr>
+<h1 class="code-line" data-line-start=49 data-line-end=50 ><a id="Small_Explanation_49"></a>Small Explanation</h1>
+<p class="has-line-data" data-line-start="50" data-line-end="52">-PDF-
+When you drag or select the PDF file and upload it, it automatically converts to uint8list and then shows you a notification that it has been uploaded. After completing this process, you can delete the PDF file from the computer because your PDF is now in the database. Apart from these, if you enter the sharing link you received from Google Drive, Dropbox, or OneDrive into the program, it automatically converts it to a downloadable link and starts downloading it. After the download process is finished, you can drag and upload the file.<br>
+
+In the process of showing PDF, I convert the uint8list in the database in the database section and show it to the user without downloading it again. If the user wants to download it, he can download the converted version by pressing the download button.
+
+-EXE / Server-
+I use portable python so that it can work on computers that do not have python, so it helps me to access Django. On the server-side, it only runs by typing "python manage.py runserver" into the console to compile the website and run the API / Database part of Django. After the session time (10 minutes) expires, it closes everything and ends. Normally it will show you the cmd to run these commands. Therefore, you have to trade with your hand or close. With the .bat, .VBS I wrote in this program, can run the portable python + server without any need for them.
+
+News that inspired me to do this:
+https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z
+</p>
 <hr>
 <h1 class="code-line" data-line-start=49 data-line-end=50 ><a id="License_49"></a>License</h1>
 <hr>
