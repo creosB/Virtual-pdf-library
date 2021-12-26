@@ -20,7 +20,7 @@ class DriveApi {
     }
   }
 
-// Calculate pdf file size and return
+// Match drive type and set link to direct download link
   String get convertedUrl {
     if (driveType == Type.google) {
       String _tempUrl = "https://drive.google.com/uc?export=download&id=";

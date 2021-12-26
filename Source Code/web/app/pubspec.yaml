@@ -35,12 +35,10 @@ dependencies:
   # database
   pdf: ^3.6.2
   universal_html: ^2.0.8
-  animated_login: ^0.0.2
   http: ^0.13.4
   provider: ^6.0.1
   cupertino_icons: ^1.0.2
   simple_icons: ^6.1.0
-  flutter_svg: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -74,6 +72,8 @@ flutter:
     - assets/images/driveoption.png
     - assets/images/pdf.png
     - assets/images/encoded.png
+    - assets/images/noresult.png
+
   fonts:
      - family: Agrandir
        fonts:

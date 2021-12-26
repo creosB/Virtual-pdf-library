@@ -79,7 +79,17 @@ class _FileListState extends State<FileList> {
                 ),
               ],
             )
-          : const Center(child: CircularProgressIndicator()),
+          : Stack(
+              children: [
+                Image.asset(
+                  "assets/images/noresult.png",
+                  fit: BoxFit.fill,
+                  width: double.infinity,
+                  height: double.infinity,
+                ),
+                const Center(child: CircularProgressIndicator()),
+              ],
+            ),
     );
   }
 
