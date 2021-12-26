@@ -3,6 +3,7 @@
 <h2 class="code-line" data-line-start=2 data-line-end=3 ><a id="Birok_teknolojiyi_kullanarak_sanal_pdf_ktphanesi_oluturdum_Bunun_sayesinde_istediiniz_gibi_onlineoffline_pdf_dosyalarn_saklayabilir_ve_rahata_ilem_yapabilirsiniz_2"></a>Birçok teknolojiyi kullanarak sanal pdf kütüphanesi oluşturdum. Bunun sayesinde istediğiniz gibi online/offline pdf dosyalarını saklayabilir ve Google Drive, Dropbox, Onedrive üzerinden dosya alıp rahatça işlem yapabilirsiniz. Tek executable dosya ile erişim sağlanmasından dolayı alanında çok özel bir yere sahip olması ve bunu paylaşma isteğimden dolayı açık kaynak olarak sizlere sunuyorum.</h2>
 <h2 class="code-line" data-line-start=3 data-line-end=4 ><a id="I_created_a_virtual_pdf_library_using_many_technologies_Thanks_to_this_you_can_store_onlineoffline_pdf_files_as_you_wish_and_operate_comfortably_3"></a>I created a virtual pdf library using many technologies. Thanks to this, you can store online/offline pdf files as you wish, and you can receive files from Google Drive, Dropbox, Onedrive and process them comfortably. I present it to you as open-source because it has a very special place in its field due to access with a single executable file and I want to share it.</h2>
 <a href="https://www.buymeacoffee.com/creos" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+<p class="has-line-data" data-line-start="5" data-line-end="6"><a href="https://github.com/creosB/Virtual-pdf-library/releases/tag/Released">Released</a></p>
 <h1 class="code-line" data-line-start=5 data-line-end=6 ><a id="zelikleri__Properties_5"></a>Özelikleri / Properties</h1>
 <ul>
 <li class="has-line-data" data-line-start="6" data-line-end="8">Onedrive, Google Drive, Dropbox ile aldığınız paylaşım linkini yükleme kısmından girdiğinizde otomatik olarak dönüştürüp dosyayı indirmenize ve yüklemenize olanak sunar.<br>
@@ -65,7 +66,7 @@ Packages:
 -djangorestframework
 -djangeo-cors-headers
 -psycopg2-binary
--sqlite3
+-pysqlite3
 
 django admin panel information
 username: admin
