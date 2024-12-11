@@ -22,10 +22,10 @@
 <h1 class="code-line" data-line-start=18 data-line-end=19 ><a id="Grseller__Pictures_18"></a>Görseller / Pictures</h1>
 <p class="has-line-data" data-line-start="19" data-line-end="25"><a href="https://youtu.be/yXfIPOkvyQQ"><img src="https://raw.githubusercontent.com/creosB/Virtual-pdf-library/main/resim/virtual.png" alt="Virtual"></a><br>
 <img src="https://github.com/creosB/Virtual-pdf-library/blob/main/resim/virtual.gif" alt="virtualgif" title="Virtual"><br>
-<img src="https://raw.githubusercontent.com/creosB/Virtual-pdf-library/main/resim/resim1.png?token=ADMMRQTLM5AUEFW4UFJQWH3BZDS2U" alt="mainpage" title="Mainpage"><br>
-<img src="https://raw.githubusercontent.com/creosB/Virtual-pdf-library/main/resim/resim2.png?token=ADMMRQUL4EPXF742TFXPNCLBZDTDW" alt="uploadpage" title="Upload Page"><br>
-<img src="https://raw.githubusercontent.com/creosB/Virtual-pdf-library/main/resim/resim3.png?token=ADMMRQVKQ65EGL2PHGJLNVDBZDTFI" alt="convert" title="Convert Page"><br>
-<img src="https://raw.githubusercontent.com/creosB/Virtual-pdf-library/main/resim/resim4.png?token=ADMMRQSEKIS34YW5QOQASZTBZDTFY" alt="filelist" title="File List"></p>
+<img src="https://raw.githubusercontent.com/creosB/Virtual-pdf-library/main/resim/resim1.png" alt="mainpage" title="Mainpage"><br>
+<img src="https://raw.githubusercontent.com/creosB/Virtual-pdf-library/main/resim/resim2.png" alt="uploadpage" title="Upload Page"><br>
+<img src="https://raw.githubusercontent.com/creosB/Virtual-pdf-library/main/resim/resim3.png" alt="convert" title="Convert Page"><br>
+<img src="https://raw.githubusercontent.com/creosB/Virtual-pdf-library/main/resim/resim4.png" alt="filelist" title="File List"></p>
 <hr>
 <h1 class="code-line" data-line-start=25 data-line-end=26 ><a id="Bilmeniz_gerekenler__What_you_need_to_know_25"></a>Bilmeniz gerekenler / What you need to know</h1>
 <ul>
